@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Analog & Digital Clock</title>
+    <link rel="stylesheet" href="k.css">
+</head>
+<body>
+    <div class="clock-container">
+        <svg class="clock-face" viewBox="0 0 100 100">
+            <!-- Clock Numbers -->
+            <text x="50" y="13" text-anchor="middle">12</text>
+            <text x="87" y="55" text-anchor="middle">3</text>
+            <text x="50" y="97" text-anchor="middle">6</text>
+            <text x="13" y="55" text-anchor="middle">9</text>            <!-- Clock hands -->
+            <line id="hour" class="hour-hand" x1="50" y1="50" x2="50" y2="30"></line>
+            <line id="minute" class="minute-hand" x1="50" y1="50" x2="50" y2="20"></line>
+            <line id="second" class="second-hand" x1="50" y1="50" x2="50" y2="15"></line>            <!-- Center point -->
+            <circle cx="50" cy="50" r="1.5" fill="white"></circle>
+        </svg>        <!-- Digital clock -->
+        <div class="digital-clock" id="digitalClock"></div>
+    </div>    <script src="k.js"></script>
+</body>
+</html>
